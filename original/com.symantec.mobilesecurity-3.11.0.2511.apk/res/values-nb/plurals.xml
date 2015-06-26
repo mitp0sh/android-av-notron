@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="renew_with_daysleft">
+        <item quantity="other">Forny nå! %1$d dager igjen</item>
+        <item quantity="one">Forny nå! %1$d dag igjen</item>
+    </plurals>
+    <plurals name="greyware_found">
+        <item quantity="other">Problemer oppdaget: %d</item>
+        <item quantity="zero">Problem oppdaget: %d</item>
+        <item quantity="one">Problem oppdaget: %d</item>
+    </plurals>
+    <plurals name="notify_risk">
+        <item quantity="other">problematiske apper funnet</item>
+        <item quantity="one">problematisk app funnet</item>
+    </plurals>
+    <plurals name="notify_risk_other_only">
+        <item quantity="other">problematiske apper funnet</item>
+        <item quantity="one">problematisk app funnet</item>
+    </plurals>
+    <plurals name="premium_trial_days">
+        <item quantity="other">Prøveperioden utløper om %d dager</item>
+        <item quantity="one">Prøveperioden utløper om %d dag</item>
+    </plurals>
+    <plurals name="malware_go_advisor_with_risk_content">
+        <item quantity="other">Vi har imidlertid identifisert %d problematiske apper på enheten. Se App Advisor for detaljer.</item>
+        <item quantity="one">Vi har imidlertid identifisert %d problematisk app på enheten. Se App Advisor for detaljer.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="renew_with_daysleft">
+        <item quantity="other">Продлить сейчас. Осталось %1$d дн.</item>
+        <item quantity="one">Продлить сейчас. Осталось %1$d дн.</item>
+    </plurals>
+    <plurals name="greyware_found">
+        <item quantity="other">Найдено проблем: %d</item>
+        <item quantity="zero">Найдено проблем: %d</item>
+        <item quantity="one">Найдено проблем: %d</item>
+    </plurals>
+    <plurals name="notify_risk">
+        <item quantity="other">Приложения с проблемами и вредоносное ПО</item>
+        <item quantity="one">Приложение с проблемами и вредоносное ПО</item>
+    </plurals>
+    <plurals name="notify_risk_other_only">
+        <item quantity="other">приложения с проблемами</item>
+        <item quantity="one">приложение с проблемами</item>
+    </plurals>
+    <plurals name="premium_trial_days">
+        <item quantity="other">Пробный период заканчивается через %d дн.</item>
+        <item quantity="one">Пробный период заканчивается через %d день</item>
+    </plurals>
+    <plurals name="malware_go_advisor_with_risk_content">
+        <item quantity="other">Вместе с тем, на вашем устройстве обнаружено %d прилож. с проблемами. Подробнее см. в советнике по приложениям.</item>
+        <item quantity="one">Вместе с тем, на вашем устройстве обнаружено %d приложение с проблемами. Подробнее см. в советнике по приложениям.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_title">24.0sp</dimen>
+    <dimen name="main_ui_icon_padding_top">40.0dip</dimen>
+    <dimen name="main_ui_icon_padding_bottom">85.0dip</dimen>
+    <dimen name="main_ui_featuertext_padding_bottom">40.0dip</dimen>
+    <dimen name="cancelless_progress_dialog_width">500.0dip</dimen>
+    <dimen name="auto_scan_setup_success_header_text_size">28.0sp</dimen>
+</resources>

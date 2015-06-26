@@ -1,0 +1,28 @@
+{
+    "domains": {
+        "login-int.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "login.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "login-int2.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "account.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        }
+    }
+}

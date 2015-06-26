@@ -1,0 +1,13 @@
+ '{' 
+    "components": '{'
+        "element": "com.symantec.mobilesecurity.webkitbridge.CommunicationEngineComponent"
+    '}', 
+    "domains": '{' 
+	   "{0}": '{' 
+		  "bridgeAccess": true,
+		  "customHeader": true,
+		  "navigationBar": false,
+		  "topBar": false
+	   '}' 
+    '}' 
+ '}' 

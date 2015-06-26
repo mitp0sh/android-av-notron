@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_license_status" android:background="@drawable/btn_licensebar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/touchable_height" android:layout_marginLeft="@dimen/main_ui_padding" android:layout_marginRight="@dimen/main_ui_padding" android:layout_marginBottom="@dimen/main_ui_padding" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/NortonTextAppearance.Medium" android:gravity="center" android:id="@id/license_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/subscription" android:layout_weight="1.0" />
+    <TextView android:textAppearance="@style/NortonTextAppearance.Medium" android:textColor="@color/black" android:gravity="center" android:id="@id/renew_text" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

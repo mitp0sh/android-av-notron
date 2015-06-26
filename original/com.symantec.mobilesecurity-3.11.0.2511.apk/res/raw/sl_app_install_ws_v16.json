@@ -1,0 +1,36 @@
+{
+	"folderName" : "raw",
+	"windowConfigs":
+	[
+		{
+			"activityNames":
+			[
+				"com.android.packageinstaller/.PackageInstallerActivity"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.packageinstaller:string/next"
+			}
+		},
+		{
+			"activityNames":
+			[
+				"com.android.packageinstaller/android.app.AlertDialog"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.packageinstaller:string/ok"
+			}
+		},
+		{
+			"activityNames":
+			[
+				"com.android.packageinstaller/.PackageInstallerActivity"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.packageinstaller:string/install"
+			}
+		}
+	]
+}

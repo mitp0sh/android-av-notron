@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_horizontal" android:id="@id/welcome_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_vertical" android:layout_marginBottom="@dimen/padding_vertical" android:text="@string/welcome_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:layout_weight="1.0">
+        <TextView android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/welcome_text" />
+    </ScrollView>
+    <Button android:id="@id/welcome_next_btn" android:paddingLeft="@dimen/padding_horizontal" android:paddingRight="@dimen/padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_vertical" android:layout_marginBottom="@dimen/padding_vertical" android:text="@string/welcome_next" />
+</LinearLayout>

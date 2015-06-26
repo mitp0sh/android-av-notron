@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/dark" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_margin="@dimen/padding_horizontal" android:text="@string/restore_system_locker_password" android:layout_weight="1.0" />
+    <Button android:id="@id/btn_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_yes" style="@style/Button" />
+    <Button android:id="@id/btn_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/btn_no" style="@style/Button" />
+    <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginBottom="@dimen/padding_horizontal" android:src="@drawable/ic_about_brand" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/malware_remove_file_title" />
+    <include layout="@layout/separator_line_title" />
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/malware_scan_remove_confirm_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_horizontal" android:text="@string/malware_remove_file_message" />
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/malware_scan_remove_cancel" android:background="@drawable/btn_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/malware_scan_uninstall_cancel" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/malware_scan_remove_confirm" android:background="@drawable/btn_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/malware_scan_uninstall_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

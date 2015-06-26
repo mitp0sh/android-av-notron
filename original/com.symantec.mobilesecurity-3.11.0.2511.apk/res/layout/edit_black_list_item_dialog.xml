@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_number" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name_colon" />
+        <EditText android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" android:maxLength="20" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal">
+        <CheckBox android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="center" android:id="@id/cb_block_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" android:text="@string/block_calls" android:layout_weight="1.0" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.8" />
+        <CheckBox android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="center" android:id="@id/cb_block_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" android:text="@string/block_sms" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

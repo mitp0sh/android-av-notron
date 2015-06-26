@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="renew_with_daysleft">
+        <item quantity="other">Ανανέωση τώρα! Απομένουν %1$d ημέρες</item>
+        <item quantity="one">Ανανέωση τώρα! Απέμεινε %1$d ημέρα</item>
+    </plurals>
+    <plurals name="greyware_found">
+        <item quantity="other">Βρέθηκαν προβλήματα: %d</item>
+        <item quantity="zero">Βρέθηκε πρόβλημα: %d</item>
+        <item quantity="one">Βρέθηκε πρόβλημα: %d</item>
+    </plurals>
+    <plurals name="notify_risk">
+        <item quantity="other">Βρέθ. malware &amp;amp; προβλ. εφαρμ.</item>
+        <item quantity="one">Βρέθ. malware &amp;amp; προβλ. εφαρμ.</item>
+    </plurals>
+    <plurals name="notify_risk_other_only">
+        <item quantity="other">Βρέθ. εφαρμογές με προβλ.</item>
+        <item quantity="one">Βρέθ. εφαρμογή με προβλ.</item>
+    </plurals>
+    <plurals name="premium_trial_days">
+        <item quantity="other">Η δοκιμή λήγει σε %d ημέρες</item>
+        <item quantity="one">Η δοκιμή λήγει σε %d ημέρα</item>
+    </plurals>
+    <plurals name="malware_go_advisor_with_risk_content">
+        <item quantity="other">Ωστόσο, αναγνωρίσαμε %d εφαρμογές με προβλήματα στη συσκευή σας. Δείτε το App Advisor για λεπτομέρειες.</item>
+        <item quantity="one">Ωστόσο, αναγνωρίσαμε %d εφαρμογή με προβλήματα στη συσκευή σας. Δείτε το App Advisor για λεπτομέρειες.</item>
+    </plurals>
+</resources>

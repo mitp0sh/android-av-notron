@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_threat_scan" android:title="@string/scan_btn" android:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:title="@string/menu_setting" android:showAsAction="never" />
+    <item android:id="@id/menu_activitylog" android:title="@string/menu_activitylog" android:showAsAction="never" />
+    <item android:id="@id/menu_share" android:title="@string/menu_share" android:showAsAction="never" />
+    <item android:id="@id/menu_help" android:title="@string/menu_help" android:showAsAction="never" />
+    <item android:id="@id/menu_about" android:title="@string/menu_about" android:showAsAction="never" />
+    <item android:id="@id/menu_other_app" android:title="@string/menu_other_app" android:showAsAction="never" />
+</menu>

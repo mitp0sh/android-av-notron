@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="viewpager_all_page_list">
+        <item>@string/feature_scan</item>
+        <item>@string/feature_anti_theft</item>
+        <item>@string/feature_app_advisor</item>
+        <item>@string/feature_backup</item>
+        <item>@string/feature_call_block</item>
+        <item>@string/feature_web_protect</item>
+        <item>@string/feature_other_norton</item>
+    </string-array>
+    <array name="intro_30daytrial_res">
+        <item>@drawable/ic_img_ad_trial</item>
+        <item>@string/intro_free_trial_title</item>
+        <item>@string/intro_free_trial_content</item>
+        <item>@color/intro_blue</item>
+    </array>
+    <string-array name="contact_src">
+        <item>@string/call_log</item>
+        <item>@string/sms_log</item>
+        <item>@string/contacts</item>
+        <item>@string/input</item>
+    </string-array>
+    <string-array name="update_schedule_list">
+        <item>@string/schedule_off</item>
+        <item>@string/schedule_daily</item>
+        <item>@string/schedule_weekly</item>
+        <item>@string/schedule_monthly</item>
+    </string-array>
+    <string-array name="wrsCategories">
+        <item>@string/wrs_phish</item>
+        <item>@string/wrs_brexp</item>
+        <item>@string/wrs_virus</item>
+    </string-array>
+</resources>

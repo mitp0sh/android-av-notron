@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionbarCompatTitleStyle" format="reference" />
+    <attr name="actionbarCompatItemStyle" format="reference" />
+    <attr name="actionbarCompatItemHomeStyle" format="reference" />
+    <attr name="actionbarCompatProgressIndicatorStyle" format="reference" />
+    <attr name="actionbarCompatLogoStyle" format="reference" />
+    <attr name="actionbarCompatSeparatorStyle" format="reference" />
+    <attr name="textStyle">
+        <flag name="bold" value="0x00000001" />
+        <flag name="italic" value="0x00000002" />
+        <flag name="normal" value="0x00000000" />
+    </attr>
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="monospace" value="3" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+    </attr>
+    <attr name="switchStyle" format="reference" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="thumb" format="reference" />
+    <attr name="track" format="reference" />
+    <attr name="textOn" format="reference" />
+    <attr name="textOff" format="reference" />
+    <attr name="thumbTextPadding" format="dimension" />
+    <attr name="switchTextAppearance" format="reference" />
+    <attr name="switchMinWidth" format="dimension" />
+    <attr name="switchPadding" format="dimension" />
+    <attr name="mark" format="reference" />
+    <attr name="maxOption" format="integer" />
+    <attr name="currentOption" format="integer" />
+    <attr name="triangleDrawable" format="reference|color" />
+    <attr name="ratio" format="float" />
+    <attr name="repeatable" format="boolean" />
+    <attr name="text" format="reference|string" />
+    <attr name="description" format="reference|string" />
+    <attr name="gdQuickActionGridStyle" format="reference" />
+    <attr name="gdQuickActionGridItemStyle" format="reference" />
+    <attr name="high_rating" format="boolean" />
+    <attr name="medium_rating" format="boolean" />
+    <attr name="low_rating" format="boolean" />
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="centered" format="boolean" />
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+</resources>

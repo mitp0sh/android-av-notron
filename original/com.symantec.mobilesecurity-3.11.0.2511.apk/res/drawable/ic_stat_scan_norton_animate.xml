@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_a" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_b" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_c" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_d" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_e" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_f" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_g" />
+    <item android:duration="200" android:drawable="@drawable/ic_stat_scan_norton_animate_h" />
+</animation-list>

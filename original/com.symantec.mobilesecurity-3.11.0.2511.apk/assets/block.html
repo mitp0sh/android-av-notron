@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>block</title>
+<style type="text/css">
+body,div,p,h1,h2,h5,h4 {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: #2d2c2e;
+}
+
+#top {
+	background-image: url(top_branding_bar.png);
+	height: 63px;
+}
+
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+#nms {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: #fff;
+	align: right;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#main {
+	position: relative;
+}
+
+.breakline {
+	background-image: url(break_line.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#mainbody {
+	position: relative;	
+	margin: 0 auto;
+}
+
+#warn {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#red_icon {
+	position: absolute;
+	top: 0px;
+}
+
+#warn h4 {
+	word-wrap: break-word;
+	text-align: left;
+	margin-right: auto;
+	margin-left: 90px;
+	color: #f4ae18;
+	font-size: 18px;
+}
+
+#warn p {
+	word-wrap: break-word;
+	text-align: left;
+	margin-right: auto;
+	margin-left: 90px;
+	color: #fff;
+	font-size: 18px;
+}
+
+#reason h5 {
+	word-wrap: break-word;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	color: #919192;
+	font-size: 16px;
+	padding: 30px 0 20px 0;
+}
+
+#exit_button {
+	background-image: url(yellow_button.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 42px;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 42px;
+	font-size: 22px;
+}
+
+#continue {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	padding-right: 0px;
+}
+
+.textlinkstyle {
+	color: #a9a9a9;
+	font-size: 18px;
+}
+</style>
+</head>
+<body>
+	<div id="top">
+		<img id="logo" src="logo.png">
+		<h4 id="nms">%app_name%</h4>
+	</div>
+	<div id="main">
+		<div class="breakline">
+			<br> <br> <br>
+		</div>
+		<div id="mainbody">
+			<div id="warn">
+				<img id="red_icon" src="red_x_icon.png" />
+				<h4>%blocked_prompt%</h4>
+				<p>%blocked_url%</p>
+			</div>
+			<p style="clear: both"></p>
+			<div id="reason">
+				<h5>%blocked_reason%</h5>
+			</div>
+			<div id="exit_eara">
+				<a id="exit_button" href="%exit_link%" class="textlinkstyle">%exit_text%</a>
+			</div>
+		</div>
+		<div class="breakline">
+			<br> <br> <br>
+		</div>
+		<div id="continue">
+			<a href="%detail_link%" class="textlinkstyle">%detail_text%</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="%continue_link%" class="textlinkstyle">%continue_text%</a>
+		</div>
+	</div>
+</body>
+</html>

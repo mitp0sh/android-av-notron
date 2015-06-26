@@ -1,0 +1,8 @@
+{
+	"autoClickWindowConfigJsons":
+	[
+		"gp_app_install",
+		"sl_app_install",		
+		"sl_app_uninstall"		
+	]
+}

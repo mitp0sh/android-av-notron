@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NortonTheme" parent="@android:style/Theme.Light">
+        <item name="android:textAppearance">@style/NortonTextAppearance</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:textAppearanceLarge">@style/NortonTextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/NortonTextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NortonTextAppearance.Small</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowTitleSize">@dimen/actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/ActionBarCompat</item>
+        <item name="android:progressBarStyleHorizontal">@style/NortonProgressBarStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textColorLink">@color/link</item>
+        <item name="android:textColorTertiary">@color/tertiary_text</item>
+        <item name="actionbarCompatTitleStyle">@style/ActionBarCompatTitle</item>
+        <item name="actionbarCompatItemStyle">@style/ActionBarCompatItem</item>
+        <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
+        <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
+        <item name="actionbarCompatLogoStyle">@style/ActionBarCompatLogo</item>
+        <item name="gdQuickActionGridStyle">@style/GreenDroid.Widget.QuickAction.Grid</item>
+        <item name="gdQuickActionGridItemStyle">@style/GreenDroid.Widget.QuickAction.Grid.Item</item>
+    </style>
+    <style name="NortonTheme.NoTitleBar.Fullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:textAppearance">@style/NortonTextAppearance</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:textAppearanceLarge">@style/NortonTextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/NortonTextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NortonTextAppearance.Small</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textColorLink">@color/link</item>
+        <item name="android:textColorTertiary">@color/tertiary_text</item>
+    </style>
+    <style name="NortonTheme.Translucent.NoTitleBar" parent="@style/NortonTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="NortonTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <style name="RoundButtonTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_round_button</item>
+    </style>
+    <style name="NortonTextAppearance.Large" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="NortonTextAppearance.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="NortonTextAppearance.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="Button">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/btn_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:padding">@dimen/btn_padding</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">@dimen/btn_width</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+    </style>
+    <style name="ActionBarCompat">
+        <item name="android:background">@color/light_gray</item>
+    </style>
+    <style name="ActionBarCompatItemBase">
+        <item name="android:layout_gravity">center|left</item>
+        <item name="android:background">@drawable/actionbar_compat_item</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="ActionBarCompatProgressIndicator" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminate">true</item>
+    </style>
+    <style name="ActionBarCompatLogo">
+        <item name="android:id">@id/actionbar_compat_logo</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/ic_norton</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">test logo</item>
+    </style>
+    <style name="ActionBarCompatTitleBase">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:id">@id/actionbar_compat_title</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ActionBarCompatTitle" parent="@style/ActionBarCompatTitleBase">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="ActionBarCompatItem" parent="@style/ActionBarCompatItemBase" />
+    <style name="ActionBarCompatHomeItem" parent="@style/ActionBarCompatItemBase" />
+    <style name="CustomRectangleIndicator">
+        <item name="centered">true</item>
+        <item name="fillColor">#fffdb510</item>
+        <item name="pageColor">#ffdcdcdc</item>
+        <item name="orientation">horizontal</item>
+        <item name="radius">2.0dip</item>
+        <item name="snap">false</item>
+        <item name="strokeColor">#ffdcdcdc</item>
+        <item name="strokeWidth">0.0dip</item>
+    </style>
+    <style name="CircleIndicator">
+        <item name="centered">true</item>
+        <item name="fillColor">#ff0094ff</item>
+        <item name="pageColor">#ff474747</item>
+        <item name="orientation">horizontal</item>
+        <item name="radius">5.0dip</item>
+        <item name="snap">false</item>
+        <item name="strokeColor">#ff474747</item>
+        <item name="strokeWidth">0.0dip</item>
+    </style>
+    <style name="IntroPageCircleIndicator" parent="@style/CircleIndicator">
+        <item name="fillColor">@color/intro_indicator_select</item>
+        <item name="pageColor">@color/intro_indicator_unselect</item>
+    </style>
+    <style name="Switch">
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="textOn">@string/capital_on</item>
+        <item name="textOff">@string/capital_off</item>
+        <item name="thumbTextPadding">12.0dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance.Small</item>
+        <item name="switchMinWidth">96.0dip</item>
+        <item name="switchPadding">16.0dip</item>
+    </style>
+    <style name="TextAppearance" />
+    <style name="TextAppearance.Small" parent="@style/TextAppearance">
+        <item name="textStyle">normal</item>
+        <item name="textColor">@color/dark</item>
+        <item name="textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="GreenDroid" />
+    <style name="GreenDroid.Widget" parent="@style/GreenDroid" />
+    <style name="GreenDroid.Widget.QuickAction" parent="@style/GreenDroid.Widget" />
+    <style name="GreenDroid.Widget.QuickAction.Grid" parent="@style/GreenDroid.Widget.QuickAction">
+        <item name="android:background">@drawable/gd_quick_action_grid_bg</item>
+        <item name="android:padding">7.0dip</item>
+    </style>
+    <style name="GreenDroid.Widget.QuickAction.Item" parent="@style/GreenDroid.Widget.QuickAction">
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="GreenDroid.Widget.QuickAction.Grid.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GreenDroid.Animation" parent="@style/GreenDroid" />
+    <style name="GreenDroid.Animation.PopDown" parent="@style/GreenDroid.Animation" />
+    <style name="GreenDroid.Animation.PopDown.Right" parent="@style/GreenDroid.Animation.PopDown">
+        <item name="android:windowEnterAnimation">@anim/gd_grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/gd_shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="dialogButton" parent="@style/Button">
+        <item name="android:textColor">@color/btn_text</item>
+        <item name="android:background">@drawable/btn_dialog</item>
+        <item name="android:padding">0.0dip</item>
+    </style>
+    <style name="smallSquareButton" parent="@style/Button">
+        <item name="android:background">@drawable/btn_dialog</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:minWidth">@dimen/main_list_btn_width</item>
+        <item name="android:minHeight">@dimen/main_list_btn_height</item>
+    </style>
+    <style name="nortonSecurityDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearance">@style/NortonTextAppearance</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:textAppearanceLarge">@style/NortonTextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/NortonTextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NortonTextAppearance.Small</item>
+        <item name="android:buttonStyle">@style/dialogButton</item>
+        <item name="android:windowBackground">@drawable/ic_dialog_background</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textColorLink">@color/link</item>
+        <item name="android:textColorTertiary">@color/tertiary_text</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="debugNortonDialogTheme" parent="@style/nortonSecurityDialogTheme">
+        <item name="android:buttonStyle">@style/Button</item>
+    </style>
+    <style name="apkPriorInstallScanDialogTheme">
+        <item name="android:textAppearance">@style/NortonTextAppearance</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:textAppearanceLarge">@style/NortonTextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/NortonTextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NortonTextAppearance.Small</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textColorLink">@color/link</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:textColorTertiary">@color/tertiary_text</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="spinnerItemStyle">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+    </style>
+    <style name="NortonProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_light</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+    <style name="TopShadowOverlay">
+        <item name="android:background">@drawable/overlay_dropshadowtop</item>
+    </style>
+    <style name="appStoreAnalyzerTutorialText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="newBadge">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ratingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">126.0dip</item>
+        <item name="android:max">5</item>
+        <item name="android:minHeight">42.0dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.CirclePageIndicator" parent="@style/Widget">
+        <item name="centered">@bool/default_circle_indicator_centered</item>
+        <item name="fillColor">@color/default_circle_indicator_fill_color</item>
+        <item name="pageColor">@color/default_circle_indicator_page_color</item>
+        <item name="orientation">@integer/default_circle_indicator_orientation</item>
+        <item name="radius">@dimen/default_circle_indicator_radius</item>
+        <item name="snap">@bool/default_circle_indicator_snap</item>
+        <item name="strokeColor">@color/default_circle_indicator_stroke_color</item>
+        <item name="strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
+    </style>
+</resources>

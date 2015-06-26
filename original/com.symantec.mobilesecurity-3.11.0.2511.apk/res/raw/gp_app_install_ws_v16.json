@@ -1,0 +1,52 @@
+{
+	"folderName" : "raw",
+	"windowConfigs":
+	[
+		{
+			"activityNames":
+			[
+				"com.android.vending/.AssetBrowserActivity",
+				"com.android.vending/com.google.android.finsky.activities.MainActivity"
+			],
+			"keyword": "com.android.vending:string/details_developer_links",
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.vending:string/install"
+			}
+		},
+		{
+			"activityNames":
+			[
+				"com.android.vending/.AssetBrowserActivity",
+				"com.android.vending/com.google.android.finsky.activities.MainActivity"
+			],
+			"keyword": "com.android.vending:string/details_developer_links",
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.vending:string/update"
+			}
+		},
+		{
+			"activityNames":
+			[
+				"com.android.vending/com.google.android.finsky.activities.AppsPermissionsActivity"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.vending:string/install_approval_large_size_yes",
+                "clickParent": true
+			}
+		},
+		{
+			"activityNames":
+			[
+				"com.android.vending/com.google.android.finsky.activities.AppsPermissionsActivity"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.vending:string/install_approval_permissions_yes",
+                "clickParent": true
+			}
+		}
+	]
+}

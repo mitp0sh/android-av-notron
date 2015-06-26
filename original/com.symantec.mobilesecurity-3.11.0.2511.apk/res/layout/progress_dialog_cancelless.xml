@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/cancelless_progress_dialog_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/progress_dialog_head" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_main_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/progress_dialog_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_horizontal" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:id="@id/progress_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" />
+        </LinearLayout>
+        <include layout="@layout/separator_line_title" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_horizontal">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" style="?android:attr/progressBarStyle" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_gravity="center_vertical" android:id="@id/progress_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" />
+    </LinearLayout>
+</LinearLayout>

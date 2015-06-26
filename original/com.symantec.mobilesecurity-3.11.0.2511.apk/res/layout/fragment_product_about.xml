@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginTop="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:text="@string/app_name" android:drawableLeft="@drawable/ic_launcher" android:drawablePadding="10.0dip" />
+            <include android:id="@id/account_separator_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/main_list_medium_padding" layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/account_id_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/license_account" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/norton_account" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include android:id="@id/device_separator_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/main_list_medium_padding" layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/device_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/device_name" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/deivce" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include android:id="@id/license_separator_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/main_list_medium_padding" layout="@layout/separator_line" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/link" android:gravity="center_vertical" android:id="@id/license_info_link" android:paddingLeft="@dimen/main_list_medium_padding" android:paddingRight="@dimen/main_list_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_main_height" android:text="@string/license_info" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" layout="@layout/separator_line" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/link" android:gravity="center_vertical" android:id="@id/open_source_licenses" android:paddingLeft="@dimen/main_list_medium_padding" android:paddingRight="@dimen/main_list_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_main_height" android:text="@string/open_source_licenses" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/main_list_medium_padding" layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/main_list_medium_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version_V" />
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_copyright" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_allright" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_about_brand" />
+</LinearLayout>

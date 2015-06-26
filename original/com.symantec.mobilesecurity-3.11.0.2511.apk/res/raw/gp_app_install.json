@@ -1,0 +1,13 @@
+{
+	"name": "Google Marketplace",
+	"packageName": "com.android.vending",
+	"windowSearchConfigJsons":
+	[
+		{
+			"name": "gp_app_install_ws_v16",
+			"versionName": "4.8.20",
+			"versionCode": 80280020,
+			"apiLevel": 16
+		}
+	]
+}

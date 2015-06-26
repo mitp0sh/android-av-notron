@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small_gap" android:layout_marginRight="@dimen/padding_small_gap">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/intro_red" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:text="@string/eula_title_string" android:drawableTop="@drawable/ic_img_mainui" android:drawablePadding="@dimen/padding_vertical" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_vertical" android:layout_marginTop="@dimen/padding_vertical">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/eula_blue" android:gravity="center|left" android:id="@id/privacy_policy_link_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_string" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/eula_blue" android:gravity="center|left" android:id="@id/eula_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/eula_link_string" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal">
+                <CheckBox android:layout_gravity="center_horizontal" android:id="@id/allow_collector_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_checkbox" />
+                <TextView android:textColor="@color/eula_gray" android:layout_gravity="center|left" android:id="@id/ncw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/allow_collector_check_box_string_1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/linerlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/separator_line" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/separator_line" />
+        <Button android:id="@id/first_launch_wizard_agree_btn" android:background="@drawable/btn_onboarding" android:paddingLeft="@dimen/padding_horizontal" android:paddingTop="3.0dip" android:paddingRight="@dimen/padding_horizontal" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eula_agree_btn_string" />
+    </LinearLayout>
+</LinearLayout>

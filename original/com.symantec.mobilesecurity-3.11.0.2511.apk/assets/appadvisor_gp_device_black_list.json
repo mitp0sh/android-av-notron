@@ -1,0 +1,25 @@
+{
+    "devices":
+    [
+        {
+            "manufacturer": "Samsung",
+            "model": "*",
+            "sdkVersion": "14"
+        },
+        {
+            "manufacturer": "Samsung",
+            "model": "*",
+            "sdkVersion": "15"
+        },
+        {
+            "manufacturer": "Samsung",
+            "model": "*",
+            "sdkVersion": "16"
+        },
+	{
+            "manufacturer": "BN LLC",
+            "model": "*",
+            "sdkVersion": "*"
+        }
+    ]
+}

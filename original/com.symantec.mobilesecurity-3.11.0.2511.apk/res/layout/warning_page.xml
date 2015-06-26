@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="480.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/red_x_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Malicious Web Site Blocked" />
+            <TextView android:id="@id/textBlockedUrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="URL" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="This is a known malicious web site. It is recommended that you do NOT visit this site." />
+    <Button android:id="@id/buttonExit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Exit this site" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/buttonDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Details" android:layout_weight="1.0" />
+        <Button android:id="@id/buttonContinue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Continue" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center" android:id="@id/textSdcardPrompt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

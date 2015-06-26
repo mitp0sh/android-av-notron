@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/backup_alert_normal_title" />
+        <include android:id="@id/separator_line" layout="@layout/separator_line_title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/advanced_confirm_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:id="@id/advanced_statement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_horizontal" android:text="@string/name_bakcup_file" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/advanced_input_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/use_default_backup_name" android:singleLine="true" android:maxLength="30" android:inputType="textAutoComplete" />
+            <LinearLayout android:orientation="vertical" android:id="@id/restore_chooser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioGroup android:orientation="vertical" android:id="@id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="start|center" android:id="@id/mode_append" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_weight="1.0" />
+                        <RadioButton android:gravity="start|center" android:id="@id/mode_overwrite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </RadioGroup>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/padding_horizontal">
+                        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="start|center" android:layout_gravity="top" android:id="@id/append_tv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/append_mode" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="start|center" android:id="@id/overwrite_tv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/overwrite_mode" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/norton_color" android:id="@id/mode_overwrite_warnning" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overwrite_mode_warnning" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/warning_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/warning_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:id="@id/detail1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:id="@id/detail2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:id="@id/detail3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:id="@id/detail4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bk_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_btn_cancel" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/bk_btn_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_btn_submit" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+version: 2.0.0-RC4
+apkFileName: com.symantec.mobilesecurity-3.11.0.2511.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '17'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '2511'
+  versionName: 3.11.0.2511
+compressionType: false
+unknownFiles:
+  com/symantec/ncwproxy/smrs/collector.dat: '8'
+  com/symantec/ncwproxy/smrs/collector.settings: '8'
+  com/symantec/ncwproxy/smrs/smrsd: '8'
+  com/symantec/ncwproxy/smrs/smrsd.pie: '8'
+  com/symantec/ncwproxy/smrs/smrs_rules.dat: '8'
+  com/symantec/starmobile/stapler/jarjar/beryllium/proxy/data/BerylliumCore.jar: '8'
+  com/symantec/starmobile/stapler/jarjar/mse/proxy/data/defs/malwaredefs.bin: '8'
+  com/symantec/starmobile/stapler/jarjar/mse/proxy/data/engine/MobileSecurityEngine.jar: '8'
+  com/symantec/starmobile/stapler/jarjar/mse/proxy/data/trees/mudtreedata.bin: '8'
+  org/jsoup/nodes/entities-base.properties: '8'
+  org/jsoup/nodes/entities-full.properties: '8'

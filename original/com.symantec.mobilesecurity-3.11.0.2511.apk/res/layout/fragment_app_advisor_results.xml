@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/privacy_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/behavior_rating_holder" />
+    <include android:id="@id/separator_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" layout="@layout/separator_line" />
+    <include android:id="@id/ads_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/ads_rating_holder" />
+    <include android:id="@id/separator_two" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" layout="@layout/separator_line" />
+    <include android:id="@id/data_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/data_rating_holder" />
+    <include android:id="@id/separator_three" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" layout="@layout/separator_line" />
+    <include android:id="@id/unusual_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/behavior_rating_holder" />
+    <include android:id="@id/separator_four" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" layout="@layout/separator_line" />
+    <include android:id="@id/battery_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/battery_rating_holder" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/device_admin" android:drawablePadding="5.0dip" />
+    <include layout="@layout/separator_line_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_admin_info" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

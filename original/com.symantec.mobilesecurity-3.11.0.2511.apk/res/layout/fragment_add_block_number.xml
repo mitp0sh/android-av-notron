@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_main_height" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selected_contacts" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/tv_added_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" android:contentDescription="@string/call_blocking" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height">
+        <Spinner android:gravity="center_vertical" android:id="@id/spinner_contact_src" android:background="@drawable/spinner_background_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:drawSelectorOnTop="true" android:prompt="@string/add_from" android:layout_weight="1.0" android:spinnerMode="dropdown" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+        <Button android:layout_gravity="center|right" android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" android:contentDescription="@string/call_blocking" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_add_from_src" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/et_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="33.0dip" android:layout_marginBottom="2.0dip" android:hint="@string/contact_search" android:singleLine="true" android:drawableRight="@drawable/icon_search" android:imeOptions="actionDone" />
+        <ListView android:id="@id/lv_add_src_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:divider="@color/separator_color" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_add_input" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+        <EditText android:id="@id/et_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:hint="@string/number" android:singleLine="true" android:maxLength="20" android:inputType="phone" android:imeOptions="actionNext" />
+        <EditText android:id="@id/et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:hint="@string/name" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone" />
+    </LinearLayout>
+</LinearLayout>

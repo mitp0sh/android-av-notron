@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.symantec.mobilesecurity.ui.backup.RestorePageLayout android:orientation="vertical" android:id="@id/restore_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_main_height" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="center|left" android:id="@id/restore_device_header" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/restore_from_device" android:singleLine="true" />
+        <com.symantec.mobilesecurity.ui.backup.EndpointSelector android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="center|right" android:id="@id/device_chooser" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/spinner_normal_noline" android:drawablePadding="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_main_height" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/light_gray" android:gravity="center|left" android:id="@id/version_header" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/about_version_title" android:singleLine="true" />
+        <com.symantec.mobilesecurity.ui.backup.TimestampSelector android:textAppearance="?android:textAppearance" android:textColor="@color/light_gray" android:gravity="center|right" android:id="@id/timestamp_chooser" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/none" android:maxLines="3" android:drawableRight="@drawable/spinner_disabled_noline" android:drawablePadding="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" />
+    <com.symantec.mobilesecurity.ui.backup.RestoreButton android:layout_gravity="center" android:id="@id/restore_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_vertical" android:text="@string/restore_tab_title" />
+</com.symantec.mobilesecurity.ui.backup.RestorePageLayout>

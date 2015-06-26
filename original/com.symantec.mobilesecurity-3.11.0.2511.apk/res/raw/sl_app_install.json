@@ -1,0 +1,12 @@
+{
+	"name": "No App Store",
+	"packageName": "com.android.packageinstaller",
+	"windowSearchConfigJsons":
+	[
+		{
+			"name": "sl_app_install_ws_v16",
+			"versionCode": 0,
+			"apiLevel": 16
+		}
+	]
+}

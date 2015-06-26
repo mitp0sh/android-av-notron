@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/license_info_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/license_account" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/norton_account" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:id="@id/account_separator_line" layout="@layout/separator_line" />
+        <LinearLayout android:orientation="vertical" android:id="@id/device_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/device_name" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/deivce" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:id="@id/device_separator_line" layout="@layout/separator_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/license_type" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/license_type" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/separator_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/psn" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/psn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/autorenew_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_main_height">
+            <include layout="@layout/separator_line" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginTop="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:text="@string/autorenew" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/autorenew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" />
+        </LinearLayout>
+        <include layout="@layout/separator_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/license_remain_days" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/remain_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remaindays" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/visit_portal_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_list_medium_padding" android:layout_marginRight="@dimen/main_list_medium_padding" android:minHeight="@dimen/list_main_height">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/visit_portal_desc" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/visit_portal_url_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nortonone_url" />
+        </LinearLayout>
+        <include layout="@layout/separator_line" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/separator_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close" android:layout_weight="1.0" style="@style/dialogButton" />
+            <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:id="@id/buy_premium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upgrade" android:layout_weight="1.0" style="@style/dialogButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/sv_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/layout_buttons" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/gray" android:layout_gravity="right" android:id="@id/tv_lite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_horizontal" android:text="@string/lite" />
+            <include layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/anti_theft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anti_theft" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/anti_theft_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/remote_scream_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/remote_locate_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/remote_lock_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/remote_wipe_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/freemium_anti_theft_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/freemium_anti_theft_recomm" />
+            </LinearLayout>
+            <include android:id="@id/anti_theft_separator" layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anti_malware" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/antimalware_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/total_scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/malware_found" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/tv_scan_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/anti_malware_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/protect_summary_recomm" />
+            </LinearLayout>
+            <include layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_app_advisor" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/appadvisor_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/greyware_found" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/appadvisor_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/protect_summary_recomm" />
+            </LinearLayout>
+            <include layout="@layout/separator_line" />
+            <LinearLayout android:orientation="vertical" android:id="@id/call_blocking" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_blocking" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/call_blocking_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/calls_block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/sms_block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/call_blocking_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/protect_summary_recomm" />
+            </LinearLayout>
+            <ImageView android:id="@id/call_firewall_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:orientation="vertical" android:id="@id/anti_phishing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/web_protection" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/web_protection_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/web_scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/web_block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/web_protect_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/web_protection_recomm" />
+            </LinearLayout>
+            <ImageView android:id="@id/backup_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:orientation="vertical" android:id="@id/backup_summary_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:minHeight="@dimen/list_main_height">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_summary_title" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/backup_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/gray" android:id="@id/last_backup_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/gray" android:id="@id/backup_recomm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_recomm" />
+            </LinearLayout>
+            <include layout="@layout/separator_line" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

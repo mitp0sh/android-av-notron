@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/start_malware_scan" />
+    <include layout="@layout/separator_line_title" />
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/malware_scan_uninstall_confirm_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:text="@string/malware_scan_uninstall_dlg_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/padding_horizontal" android:paddingRight="@dimen/padding_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_vertical" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/malware_scan_uninstall_item_icon" android:layout_width="@android:dimen/app_icon_size" android:layout_height="@android:dimen/app_icon_size" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/dark" android:id="@id/malware_scan_uninstall_apk_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/dark" android:ellipsize="end" android:id="@id/malware_scan_uninstall_package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/malware_scan_uninstall_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/malware_scan_uninstall_cancel" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/malware_scan_uninstall_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/malware_scan_uninstall_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TopShadowOverlay"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/device_admin_orange" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/admin_dialog_title" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/cancel" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_close" android:scaleType="fitCenter" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/separator_color" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_admin_info" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@color/separator_color" />
+    <LinearLayout android:orientation="vertical" android:id="@id/setup_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/blue" android:gravity="center_horizontal" android:id="@id/text_acitve" android:paddingTop="@dimen/padding_horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/admin_dialog_button_text" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:gravity="center_horizontal" android:id="@id/text_later" android:paddingBottom="@dimen/padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/admin_dialog_active_later_text" />
+    </LinearLayout>
+</LinearLayout>

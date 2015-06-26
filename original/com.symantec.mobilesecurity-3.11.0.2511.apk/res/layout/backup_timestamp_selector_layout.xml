@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/btn_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/timestamp_list_button_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/padding_horizontal">
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/device_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+            <Button android:layout_gravity="center|right" android:id="@id/manage_time_stamp_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_text" android:layout_weight="1.0" style="@style/dialogButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delete_buttons_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/delete_list_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_text" android:layout_weight="1.0" style="@style/dialogButton" />
+            <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+            <Button android:id="@id/delete_list_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_to_list_view_text" android:layout_weight="1.0" style="@style/dialogButton" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/separator_line" />
+    <com.symantec.mobilesecurity.ui.backup.TimestampListView android:id="@id/timestampList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:divider="@color/separator_color" android:dividerHeight="0.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+</LinearLayout>

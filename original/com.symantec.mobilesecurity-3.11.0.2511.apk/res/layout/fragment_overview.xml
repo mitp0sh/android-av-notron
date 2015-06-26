@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/cobranding_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/main_ui_padding" android:layout_marginRight="@dimen/main_ui_padding" android:layout_weight="1.0">
+        <GridView android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/main_ui_gridview_padding" android:verticalSpacing="@dimen/main_ui_gridview_padding" android:stretchMode="columnWidth" android:columnWidth="150.0dip" android:numColumns="2" />
+        <Button android:textSize="16.0dip" android:textColor="@color/blue" android:ellipsize="end" android:gravity="center" android:id="@id/layout_go_premium" android:background="@drawable/btn_upgrade" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:text="@string/btn_upgrade" android:lines="2" android:layout_alignBottom="@id/gridview" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/subscription" />
+</LinearLayout>

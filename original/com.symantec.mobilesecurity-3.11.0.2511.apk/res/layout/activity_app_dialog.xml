@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <ImageButton android:id="@id/close_button" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/close_x" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/smallSquareButton" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/gray_text" android:ellipsize="end" android:id="@id/app_name_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_below="@id/norton_logo" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_subheader" android:id="@id/published_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_below="@id/app_name_text_view" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/norton_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_about_brand" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/main_content_scroll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/fragment_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_progress" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@id/separator_four" android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/feedback_holder" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/darkgray" android:layout_gravity="center" android:id="@id/feedback_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/helpful_feedback" android:layout_weight="1.0" />
+        <CheckBox android:textColor="@color/darkgray" android:layout_gravity="center" android:id="@id/user_feedback_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@null" android:text="@string/user_feedback_yes" android:drawableRight="@drawable/checkbox_selector" android:onClick="onClick" style="?android:attr/textAppearanceSmall" />
+        <CheckBox android:textColor="@color/darkgray" android:layout_gravity="center" android:id="@id/user_feedback_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:button="@null" android:text="@string/user_feedback_no" android:drawableRight="@drawable/checkbox_selector" android:onClick="onClick" style="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+</LinearLayout>

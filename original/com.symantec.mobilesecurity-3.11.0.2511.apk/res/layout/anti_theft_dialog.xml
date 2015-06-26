@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/anti_theft_dialog_title" />
+        <include layout="@layout/separator_line_title" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/anti_theft_dialog_passcode_show" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/norton_color" android:layout_gravity="center_horizontal" android:id="@id/anti_theft_sms_passcode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/anti_theft_dialog_function_show" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip">
+            <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/anti_theft_dialog_lock_or_not" android:drawableLeft="@drawable/ic_popup_lock" android:drawablePadding="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/anti_theft_locate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/anti_theft_dialog_locate" android:drawableLeft="@drawable/ic_popup_locate" android:drawablePadding="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/anti_theft_remote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/anti_theft_dialog_remote" android:drawableLeft="@drawable/ic_popup_scream" android:drawablePadding="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/anti_theft_wipe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/anti_theft_dialog_wipe" android:drawableLeft="@drawable/ic_popup_wipe" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:autoLink="web" android:linksClickable="true" android:layout_gravity="center_horizontal" android:id="@id/anti_theft_link_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:text="@string/anti_theft_dialog_service_link" />
+        <include layout="@layout/separator_line" />
+        <Button android:id="@id/anti_theft_OK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/anti_theft_dialog_ok" style="@style/dialogButton" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_app_store_analyzer_setup_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/setup_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/icon_appadvisor" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0sp" android:textColor="@color/blue" android:id="@id/setup_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_title_app_advisor_for_google_play" android:maxLines="1" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/gray_header" android:id="@id/setup_subheader_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_store_analyzer_setup_subheader" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" layout="@layout/separator_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_scanning" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layer_app_store_analyzer_setup_bar">
+        <ProgressBar android:id="@id/progress" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminateOnly="true" style="@style/NortonProgressBarStyle" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/blue" android:gravity="right" android:id="@id/tv_scan_percent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/blue" android:gravity="center" android:id="@id/scanning" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/malware_scanning" android:drawableTop="@drawable/ic_initial_scan" android:drawablePadding="10.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_risks" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layer_app_store_analyzer_setup_bar">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/risk_tip" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/advisor_tips" />
+        <ExpandableListView android:id="@id/risk_list" android:background="#fffbfbfb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#fff2f2f2" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="@color/list_sub_default" android:divider="@color/list_divider" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/layer_no_risk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layer_app_store_analyzer_setup_bar">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center" android:id="@id/safe_tip" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/advisor_no_risk" android:drawableBottom="@drawable/ic_img_ad_clean" android:drawablePadding="18.0dip" />
+    </ScrollView>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/app_store_analyzer_setup_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

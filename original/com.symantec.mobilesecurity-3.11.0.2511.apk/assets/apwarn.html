@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title>Warn</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<style type="text/css">
+			body,div,p,h1,h2,h5,h4{
+				padding:0px;
+				margin:0px;
+			}
+			body{
+				background-color:#ffffff;
+			}
+			#top{
+				background-image:url(top_branding_bar.png);
+				height:68px;
+			}
+			#logo{
+				position:absolute;
+				top:15px;
+				left:12px;
+				height:32px;
+				width:100px;
+			}
+			#nms{
+				position:absolute;
+				top:20px;
+				left:110px;
+				color:#222222;
+				align:left;
+				font-size:18px; 
+				font-weight:bold;
+			}
+			#main{
+				position:relative;
+			}
+			.breakline{
+				background-image:url(break_line.png);
+				background-repeat:repeat-x;    
+				background-position: center;
+			}
+			#mainbody{
+				position:relative;
+				width:500px;
+				margin:0 auto;
+			}
+
+			#warn{
+				text-align:center;
+				margin:0 auto;     
+			}
+
+			#red_icon {
+				position: absolute;
+				top:0px;
+				height:60px;
+				width:66px;
+			}
+
+			#warn h4{
+				 word-wrap: break-word; 
+				text-align:left; 
+				margin-right: auto; 
+				margin-left: 70px;
+				color:#f4ae18;
+				font-size:18px;
+			}
+
+			#warn p{
+				 word-wrap: break-word;
+				text-align:left; 
+				margin-right: auto; 
+				margin-left: 70px;
+				color:#222222;
+				font-size:18px;
+			}
+			#reason h5{
+				 word-wrap: break-word;
+				text-align:left; 
+				margin-right: auto; 
+				margin-left: auto;
+				color:#666666;
+				font-size:16px;
+				padding: 30px 0 20px 0;
+			}
+			#exit_button{
+				background-color:#ffaa00;
+				background-position:center;
+				background-repeat:no-repeat;
+				height:48px;
+				width:262px;
+				margin:0 auto;
+				text-align:center;
+				vertical-align:middle; 
+				line-height:48px;
+				font-size:22px;
+			}
+			#continue{
+				width:500px;
+				margin:0 auto;
+				text-align:center;
+				padding-right:0px;
+			}
+			#detail{
+				word-wrap: break-word;
+				text-align:left; 
+				margin-right: auto; 
+				margin-left: auto;				
+				font-size:18px;
+				padding: 0 0 20px 0;
+			}
+			.textlinkstyle{
+				color:#00aeef;
+				font-size:18px;
+			}
+			.detailstyle{
+				color:#00aeef;
+				font-size:18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<img id="logo" src="logo.png">
+    		<h4 id="nms">%wp_app_name%</h4>
+		</div>
+		<div id="main">
+			<div>
+				<br>
+				<br>
+			</div>
+			<div id="mainbody">   
+				<div id="warn" >
+					<img id="red_icon" src="warning.png"/>
+					<p>%bad_page_blocked%</p>
+					<h4>%bad_site_domain%</h4>
+				</div>
+				<p style="clear:both"></p>
+				<div id="reason">
+					<h5>%blocked_reason%</h5>
+				</div>
+				<div id="detail">
+					<a href="%phish_detail%" class="detailstyle">%detail%</a>
+				</div>
+				<div id="exit_eara">
+					<p id="exit_button" onclick="javascript:window.location.href='%exit_link%';">%exit_button_text%</p> 
+				</div>
+			</div>  
+			<div>
+				<br>
+				<br>
+			</div>
+			<div id="continue">
+				<a href="%continue_flag%" class="textlinkstyle">%continue%</a>
+			</div>
+			<div>
+				<br>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>

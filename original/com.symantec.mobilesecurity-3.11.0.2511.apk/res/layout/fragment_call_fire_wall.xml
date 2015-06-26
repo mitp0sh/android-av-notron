@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/tab_btns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/middle" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+        <Button android:textColor="@color/dark" android:id="@id/btn_block_history" android:background="@drawable/tabs_selected_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/block_history" android:layout_alignRight="@id/middle" android:layout_alignParentLeft="true" />
+        <Button android:textColor="@color/dark" android:id="@id/btn_black_list" android:background="@drawable/tabs_unselected_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/black_list" android:layout_alignLeft="@id/middle" android:layout_alignTop="@id/btn_block_history" android:layout_alignBottom="@id/btn_block_history" android:layout_alignParentRight="true" />
+        <View android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/btn_block_history" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/lists_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_below="@id/tab_btns" />
+</RelativeLayout>

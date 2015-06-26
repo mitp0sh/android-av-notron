@@ -1,0 +1,22 @@
+# This configure file is used to let NMS know what kind of SMS AT feature are
+# enabled when building the layout.
+
+# Is this layout built-in with SMS AT? "false" means this layout doesn't 
+# support SMS AT at all. Both SMS AT and Web SMS AT are disabled.
+# Note: Web AT itself isn't disabled if it's false. 
+sms_enabled=true
+
+# Should this layout use old SMS AT or Web base SMS AT?
+# Old SMS AT (false):
+#    1) Users can send remote command via SMS.
+#    2) Norton Account isn't required.
+#    3) Users cannot login NMS web portal.
+# Web base SMS AT (true):
+#    1) Users must use a Norton Account to login and bind device.
+#    2) SMS AT shares the same password with web unlock password.
+#    3) Users can only change AT password in web portal.
+# This value won't be examined if sms_enabled=false.
+web_sms=true
+
+# Set to true, if web related feature is enabled.
+web_at=true

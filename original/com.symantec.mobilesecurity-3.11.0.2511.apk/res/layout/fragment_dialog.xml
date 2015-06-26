@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/warning_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" />
+    <include layout="@layout/separator_line_title" />
+    <TextView android:id="@id/warning_mes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" />
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/positive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_selector" android:padding="@dimen/advisor_list_padding_medium" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/text_size_extra_large" android:textStyle="bold" android:gravity="center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignRight="@id/app" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_ui_detailtext_padding_bottom" android:layout_toRightOf="@id/count" android:layout_alignBaseline="@id/count" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/negative_five_dp" android:minWidth="@dimen/app_text_min_width" android:text="@string/advisor_apps" android:layout_below="@id/count" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/count" android:layout_alignBaseline="@id/app" android:layout_alignLeft="@id/category" />
+</RelativeLayout>

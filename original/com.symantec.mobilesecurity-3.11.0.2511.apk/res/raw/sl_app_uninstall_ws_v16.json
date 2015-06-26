@@ -1,0 +1,16 @@
+{
+	"folderName": "raw",
+	"windowConfigs":
+	[
+		{
+			"activityNames":
+			[
+				"com.android.packageinstaller/.UninstallerActivity"
+			],
+			"autoClickStringIdConfig":
+			{
+                "clickStringId": "com.android.packageinstaller:string/ok"
+			}
+		}
+	]
+}

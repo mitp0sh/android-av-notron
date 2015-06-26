@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="renew_with_daysleft">
+        <item quantity="other">Renew now! %1$d days left</item>
+        <item quantity="one">Renew now! %1$d day left</item>
+    </plurals>
+    <plurals name="greyware_found">
+        <item quantity="other">Issues found: %d</item>
+        <item quantity="zero">Issue found: %d</item>
+        <item quantity="one">Issue found: %d</item>
+    </plurals>
+    <plurals name="notify_risk">
+        <item quantity="other">Malware and apps with issues found</item>
+        <item quantity="one">Malware and app with issues found</item>
+    </plurals>
+    <plurals name="notify_risk_other_only">
+        <item quantity="other">apps with issues found</item>
+        <item quantity="one">app with issues found</item>
+    </plurals>
+    <plurals name="premium_trial_days">
+        <item quantity="other">Trial ends in %d days</item>
+        <item quantity="one">Trial ends in %d day</item>
+    </plurals>
+    <plurals name="malware_go_advisor_with_risk_content">
+        <item quantity="other">However, we have identified %d apps with issues on your device. Check out App Advisor for details.</item>
+        <item quantity="one">However, we have identified %d app with issues on your device. Check out App Advisor for details.</item>
+    </plurals>
+</resources>

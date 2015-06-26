@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:text="@string/general_setting" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="6.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ongoing_notification" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/ongoing_notification_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ongoing_notification_hint" />
+                </LinearLayout>
+                <CheckBox android:id="@id/ongoing_notification_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/allow_collector_check_box_string" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/collector_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/enable_ncw_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/enable_ncw_hint" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/anti_theft_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="@string/anti_theft_setting" />
+            <LinearLayout android:orientation="vertical" android:id="@id/device_admin_switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="6.0dip" android:src="@color/separator_color" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/device_admin" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/device_admin_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/device_admin_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_admin_desc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/security_wipe_switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/security_wipe" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/security_wipe_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_wipe_desc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sim_card_lock_switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sim_lock" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/sim_card_lock_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sim_lock_desc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/app_advisor_setting_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="@string/app_advisor_setting" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:textAppearance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/scan_for_gp" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/app_advisor_setup_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_text_desc" />
+                    <Button android:textAppearance="?android:textAppearance" android:id="@id/app_advisor_setup_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/scan_setup_btn_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="@string/scans_setting" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textAppearance="?android:textAppearance" android:layout_gravity="center_vertical" android:id="@id/schedule_scan_period_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_period_label" android:layout_weight="1.0" />
+                <Spinner android:layout_gravity="center" android:id="@id/schedule_period_spinner" android:background="@drawable/spinner_background_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:drawSelectorOnTop="true" android:layout_weight="1.0" android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <TextView android:textColor="@color/red" android:gravity="center" android:id="@id/schedule_scan_delay_hint" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sche_scan_delay_hint" />
+            <TextView android:textColor="@color/light_gray" android:gravity="right" android:id="@id/schedule_scan_set_by_admin" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_set_by_administrator" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearance" android:id="@id/scan_sdcard_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_sdcard" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_scan_sdcard_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_sdcard_hint" />
+                </LinearLayout>
+                <CheckBox android:id="@id/scan_sdcard_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/light_gray" android:gravity="right" android:id="@id/scan_sdcard_set_by_admin" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_set_by_administrator" />
+            <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:text="@string/live_update_setting" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:src="@color/separator_color" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textAppearance="?android:textAppearance" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_update_last_update" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearance" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/last_live_update_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/none" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:textAppearance="?android:textAppearance" android:id="@id/manual_live_update" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="30.0dip" android:text="@string/live_update_manual_update" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/app_store_analyzer_setup_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

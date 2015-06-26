@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/add_to_black_dialog_message_multiple" />
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip" android:measureWithLargestChild="true">
+        <Button android:layout_gravity="right" android:id="@id/btn_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/add_to_black_dialog_no" android:maxLines="2" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:layout_gravity="left" android:id="@id/btn_yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/add_to_black_dialog_yes" android:maxLines="2" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

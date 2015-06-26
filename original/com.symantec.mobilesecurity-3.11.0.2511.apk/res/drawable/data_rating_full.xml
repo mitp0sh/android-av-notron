@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sym="http://schemas.android.com/apk/res/com.symantec.mobilesecurity">
+    <item android:drawable="@drawable/data_blue" sym:low_rating="true" />
+    <item android:drawable="@drawable/data_yellow" sym:medium_rating="true" />
+    <item android:drawable="@drawable/data_red" sym:high_rating="true" />
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:baselineAligned="false">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0dip" android:textColor="@color/dark" android:layout_gravity="center" android:id="@id/tab_lock" android:background="@drawable/tabs_selected_default" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/unlock_by_passcode_title" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0dip" android:textColor="@color/dark" android:layout_gravity="center" android:id="@id/tab_help" android:background="@drawable/tabs_unselected_default" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/unlock_help_title" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/tab_lock_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/dark" android:layout_gravity="center" android:id="@id/unlock_by_passcode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlock_by_passcode_message_sim_card" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/unlock_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding">
+                        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@id/password_error_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" />
+                        <EditText android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dark" android:ellipsize="end" android:layout_gravity="center" android:id="@id/password_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:hint="@string/unlock_enter_passcode" android:singleLine="true" android:digits="1234567890." android:inputType="numberPassword" android:textCursorDrawable="@null" />
+                        <Button android:id="@id/unlock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/unlock_button" style="@style/Button" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/emergency_call_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding">
+                        <Button android:id="@id/call_emergency" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/emergency_call" android:layout_weight="1.0" style="@style/Button" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:text="@string/legal_text_on_lockscreen" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/answer_call_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_list_medium_padding" android:layout_marginBottom="@dimen/main_list_medium_padding">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/main_list_medium_padding" android:src="@drawable/calling_icon" />
+                        <include layout="@layout/separator_line" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <Button android:id="@id/answer_call_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/answer_call" android:layout_weight="1.0" style="@style/Button" />
+                            <Button android:id="@id/end_call_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/end_call" android:layout_weight="1.0" style="@style/Button" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/tab_help_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal">
+                    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/dark" android:id="@id/forget_pwd_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_pwd_hint_text" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_horizontal" android:src="@drawable/ic_about_brand" />
+    </LinearLayout>
+    <View android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

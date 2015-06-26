@@ -1,0 +1,91 @@
+{
+    "components": {
+        "element": "com.symantec.mobilesecurity.webkitbridge.CommunicationEngineComponent"
+    },
+    "domains": {
+        "manage-devint1-b.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "cloudconnect-int2.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "cloudconnectalt-int2.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "cloudconnect-int.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+		"cloudconnectalt-int.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "cloudconnect.norton.com": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "login-int.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "login-int2.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "login.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "account.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+		"buy-uat2.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+		},
+        "buy-qa3.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "buy.norton.com": {
+            "bridgeAccess": false,
+            "customHeader": true,
+            "navigationBar": false,
+            "topBar": true
+        },
+        "127.0.0.1": {
+            "bridgeAccess": true,
+            "customHeader": true,
+            "navigationBar": true,
+            "topBar": true
+        }
+    }
+}

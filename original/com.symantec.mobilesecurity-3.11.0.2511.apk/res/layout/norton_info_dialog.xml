@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/nms" />
+    <include layout="@layout/separator_line_title" />
+    <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/norton_info_dialog_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:layout_marginBottom="@dimen/padding_horizontal" android:text="@string/norton_one_renew_message" />
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/norton_info_dialog_button" android:background="@drawable/btn_dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

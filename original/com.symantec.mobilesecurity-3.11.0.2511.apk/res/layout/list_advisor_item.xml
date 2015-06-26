@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_sub_selector" android:paddingLeft="@dimen/advisor_list_padding_large" android:paddingTop="@dimen/advisor_list_padding_medium" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/sym_app_on_sd_unavailable_icon" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/gray" android:id="@id/app_name" android:paddingLeft="@dimen/advisor_list_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/advisor_list_padding_medium" android:src="@color/list_divider" />
+</LinearLayout>

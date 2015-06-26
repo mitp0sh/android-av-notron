@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">18.0sp</dimen>
+    <dimen name="text_size_normal">22.0sp</dimen>
+    <dimen name="text_size_medium">24.0sp</dimen>
+    <dimen name="text_size_large">30.0sp</dimen>
+    <dimen name="text_size_round_button">21.0dip</dimen>
+    <dimen name="main_ui_icon_padding_top">45.0dip</dimen>
+    <dimen name="main_ui_icon_padding_bottom">90.0dip</dimen>
+    <dimen name="main_ui_featuertext_padding_bottom">45.0dip</dimen>
+    <dimen name="cancelless_progress_dialog_width">680.0dip</dimen>
+    <dimen name="intro_title_padding_top">36.0dip</dimen>
+    <dimen name="intro_sub_title_padding_top">24.0dip</dimen>
+    <dimen name="intro_text_special_padding_left">70.0dip</dimen>
+</resources>

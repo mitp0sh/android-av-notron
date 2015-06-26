@@ -1,0 +1,42 @@
+{
+	"name": "Google Marketplace",
+	"packageName": "com.android.vending",
+	"shareSearchConfig":
+	{
+		"url": "play.google.com/store/apps/details",
+		"webSearchConfigs":
+		[
+			{
+				"queryParameterConfig":
+				{
+					"name": "id"
+				}
+			}
+		],
+		"subjectFormatStringId": "com.android.vending:string/share_subject"
+	},
+	"nameSearchConfigsJsons":
+	[
+		{
+			"name": "gp_app_search_ns_80290013",
+			"versionName": "4.9.13",
+			"versionCode": 80290013,
+			"apiLevel": 14
+		},
+		{
+			"name": "gp_app_search_ns",
+			"versionName": "4.8.20",
+			"versionCode": 80280020,
+			"apiLevel": 14
+		}
+	],
+	"windowSearchConfigJsons":
+	[
+		{
+			"name": "gp_app_search_ws_v14",
+			"versionName": "4.8.20",
+			"versionCode": 80280020,
+			"apiLevel": 14
+		}
+	]
+}

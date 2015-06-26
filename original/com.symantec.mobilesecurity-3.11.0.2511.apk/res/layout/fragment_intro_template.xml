@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.85">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/white" android:gravity="center|left" android:id="@id/intro_norton_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small_gap" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/intro_header_text" android:drawableLeft="@drawable/icon_norton_black" android:drawablePadding="@dimen/colon_padding_right" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/intro_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_extra_large" android:src="@drawable/ic_img_ad_trial" android:scaleType="fitCenter" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/intro_red" android:gravity="center" android:id="@id/intro_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal" android:text="@string/intro_free_trial_title" />
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/white" android:gravity="left" android:id="@id/intro_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_vertical" android:layout_marginTop="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_vertical" android:text="@string/intro_free_trial_content" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <View android:background="@color/intro_transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.15" />
+</LinearLayout>

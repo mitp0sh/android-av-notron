@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.symantec.mobilesecurity" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.sec.android.provider.logsprovider.permission.READ_LOGS"/>
+    <uses-permission android:name="com.sec.android.provider.logsprovider.permission.WRITE_LOGS"/>
+    <uses-permission android:name="com.maf.ce.usage"/>
+    <permission android:label="@string/cloud_connect_permission" android:name="com.maf.ce.usage"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <permission android:description="@string/app_name" android:label="@string/app_name" android:name="com.symantec.permission.UNLOCK" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.symantec.permission.UNLOCK"/>
+    <permission-group android:description="@string/app_title" android:label="@string/app_title" android:name="com.symantec.permission-group.MOBILE_SECURITY"/>
+    <permission android:description="@string/app_name" android:label="@string/app_name" android:name="com.symantec.permission.ACCESS_NORTON_SECURITY" android:permissionGroup="com.symantec.permission-group.MOBILE_SECURITY" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.symantec.permission.ACCESS_NORTON_SECURITY"/>
+    <permission android:label="receive_cmd_permission" android:name="com.symantec.starmoblie.permission.receive_ctrl" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.symantec.starmoblie.permission.receive_ctrl"/>
+    <permission android:name="com.symantec.mobilesecurity.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.symantec.mobilesecurity.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_norton" android:name="com.symantec.mobilesecurity.service.ApplicationLauncher" android:theme="@style/NortonTheme">
+        <meta-data android:name="maf.ce.signature" android:value="wG7jVIhdwQ9nfUhrwElj4nn3zo+rXxn935TWrQVV9uJ/R0O4dMejyXXZ1g54Rleiexgjc5uLlV/WsSnmPmVXvmHzwsVdAgha4AR5PZE576OQC03xvKliUZ66uDKlrLFZ671dtofh8MAJD5r1klI6m/9rsu/Ozl9fhYQA/mHvH9xmB0WOSi4sy/2yevOaSjnl4ZWzoa1loYj4z6AbISOwAk1MN59EFH7H1za0TIzbAS2VeQ1L/0H40KZe0vL670gNXPSILUqA8vsennvFe1wiupyt69XlUA5ZySko73Cbdbcd5GcU6Hwn6RQuot76uFupqXk/I+mFsC80OyFDIxU/Ow=="/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/product_name" android:name="com.symantec.mobilesecurity.ui.Startor" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="activate" android:scheme="nortonmobilesecurity"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="activatev2" android:scheme="nortonmobilesecurity"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/home_page" android:name="com.symantec.mobilesecurity.ui.GooglePlayPurchaseActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/home_page" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.ui.EulaAgreementActivity" android:screenOrientation="nosensor"/>
+        <activity android:label="@string/home_page" android:name="com.symantec.mobilesecurity.ui.EulaDisplayActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.symantec.mobilesecurity.ui.IntroductionActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/home_page" android:name="com.symantec.mobilesecurity.ui.LoginActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/home_page" android:launchMode="singleTask" android:name="com.symantec.mobilesecurity.ui.phone.ViewPagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/menu_setting" android:name="com.symantec.mobilesecurity.ui.phone.SettingsActivity" android:screenOrientation="nosensor"/>
+        <activity android:label="@string/menu_activitylog" android:name="com.symantec.mobilesecurity.ui.phone.ActivityLogActivity" android:screenOrientation="nosensor"/>
+        <activity android:label="@string/menu_help" android:name="com.symantec.mobilesecurity.ui.phone.AppHelpActivity" android:screenOrientation="nosensor"/>
+        <activity android:label="@string/menu_about" android:name="com.symantec.mobilesecurity.ui.phone.ProductAboutActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/feature_app_advisor" android:name="com.symantec.mobilesecurity.appadvisor.ui.AppDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/home_page" android:name="com.symantec.mobilesecurity.ui.PremiumTrialEndsActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/call_blocking" android:name="com.symantec.mobilesecurity.ui.callfirewall.AddBlockNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/remove_malware" android:name="com.symantec.mobilesecurity.ui.MaliciousWarningDialog" android:taskAffinity="com.symantec.mobilesecurity.ui.warning.maliciousapk" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:label="@string/device_admin" android:name="com.symantec.mobilesecurity.ui.EnableDeviceAdminDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.symantec.drm.malt.ui.LicenseWebViewActivity"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.antitheft.web.ui.SystemLockerHintActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.antitheft.web.ui.SystemLockerRestoreActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.symantec.mobilesecurity.ui.LiveUpdateProgressDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.symantec.mobilesecurity.ui.LiveUpdateApkDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.symantec.mobilesecurity.ui.TurnOnUnknownSourcesDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.symantec.mobilesecurity.ui.UpgradeGuideDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.ui.UserRateDialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.symantec.mobilesecurity.ui.UpgradeAndRenewActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/license_info" android:name="com.symantec.mobilesecurity.ui.LicenseInfo" android:screenOrientation="nosensor"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/protection_summary" android:name="com.symantec.mobilesecurity.ui.ProtectionSummaryActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/feature_backup" android:name="com.symantec.mobilesecurity.ui.backup.TimestampListActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.safeweb.WarningActivity" android:noHistory="true" android:theme="@style/nortonSecurityDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.symantec.mobilesecurity.safeweb" android:scheme="symc"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.symantec.webkitbridge.bridge.BrowserActivity" android:screenOrientation="nosensor" android:theme="@style/NortonTheme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_advisor" android:launchMode="singleInstance" android:name="com.symantec.mobilesecurity.appadvisor.AppDialogActivity" android:stateNotNeeded="true" android:theme="@style/nortonSecurityDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:enabled="false" android:excludeFromRecents="true" android:label="@string/norton_installer" android:name="com.symantec.mobilesecurity.ui.ApkPriorInstallationScan" android:taskAffinity="com.symantec.mobilesecurity.priorinstallationscan" android:theme="@style/apkPriorInstallScanDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.INSTALL_PACKAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/vnd.android.package-archive"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSTALL_PACKAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.symantec.mobilesecurity.ui.notification.ActionResponser" android:screenOrientation="nosensor" android:taskAffinity="com.symantec.mobilesecurity.ui.notification.action" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/remove_malware" android:name="com.symantec.mobilesecurity.ui.MalwareFoundDialog" android:taskAffinity="com.symantec.mobilesecurity.ui.warning.maliciousapp" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/remove_malware" android:name="com.symantec.mobilesecurity.ui.MaliciousRemoveDialog" android:screenOrientation="portrait" android:taskAffinity="com.symantec.mobilesecurity.ui.warning.maliciousremoveapk" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/remove_malware" android:name="com.symantec.mobilesecurity.ui.NortonInfoDialog" android:screenOrientation="portrait" android:taskAffinity="com.symantec.mobilesecurity.ui.info.dialog" android:theme="@style/nortonSecurityDialogTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/product_name" android:name="com.symantec.mobilesecurity.debug.DebugActivity" android:screenOrientation="nosensor" android:theme="@style/debugNortonDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debug" android:scheme="nortonmobilesecurity"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.symantec.mobilesecurity.service.NMSDailyAlarm"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.NMSWeeklyAlarm"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.NMSMonthlyAlarm"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.RemoteLocateAlarm"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.NortonBootCompletedReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.antitheft.web.nat.CameraShotAlarmReceiver"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.CommandReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.service.TimeChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.symantec.mobilesecurity.service.UserRateReceiver">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.webblockedsuccess"/>
+                <action android:name="com.symantec.mobilesecurity.cleanallmalware"/>
+                <action android:name="com.symantec.mobilesecurity.mainscreencheck"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.symantec.mobilesecurity.service.bootStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.symantec.mobilesecurity.service.CollectAlarm"/>
+        <receiver android:exported="true" android:name="com.symantec.mobilesecurity.service.UploadAlarm"/>
+        <receiver android:exported="true" android:name="com.symantec.mobilesecurity.service.NortonPingAlarm"/>
+        <receiver android:name="com.symantec.mobilesecurity.service.CollectorReceiver">
+            <intent-filter>
+                <data android:scheme="package"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.symantec.smrs.collector.COLLECT_DATA"/>
+                <action android:name="com.symantec.smrs.collector.UPLOAD_DATA"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SMRS_LOGMONITOR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.symantec.smrs.collector.intent.action.SMS_CHANGED"/>
+                <action android:name="com.symantec.smrs.collector.intent.action.CALL_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.service.AgreeEulaReceiver">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.AGREE_EULA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.symantec.mobilesecurity.service.PackageMonitor">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.symantec.mobilesecurity.trial.UpdateReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.service.WhoAmIReceiver">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.WHO_AM_I"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.antimalware.MalwareScanAlarm"/>
+        <receiver android:name="com.symantec.mobile.lifecycle.ScheduleAlarmReceiver"/>
+        <receiver android:name="com.symantec.mobile.lifecycle.LifecycleNetworkDetector">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.symantec.mobilesecurity.service.ReferralTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.symantec.mobilesecurity.service.PowerConnectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.symantec.ping.PingTaskReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.mobilesecurity.service.SimChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.symantec.ping.PingTaskService"/>
+        <service android:label="@string/app_name" android:name="com.symantec.mobilesecurity.service.NortonInitService" android:permission="com.symantec.permission.ACCESS_NORTON_SECURITY">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.HOSTSERVICE"/>
+                <action android:name="com.symantec.mobilesecurity.ui.notifier"/>
+                <action android:name="com.symantec.mobilesecurity.bugreport.onreport"/>
+                <action android:name="com.symantec.mobilesecurity.remotecommand.oncommand"/>
+                <action android:name="com.symantec.mobilesecurity.alarm.onalarm"/>
+                <action android:name="com.symantec.mobilesecurity.malwarescan.scan"/>
+                <action android:name="com.symantec.mobilesecurity.bootcomplete"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.symantec.mobilesecurity.service.CollectorService" android:permission="com.symantec.permission.ACCESS_NORTON_SECURITY">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.collector"/>
+                <action android:name="com.symantec.mobilesecurity.SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.symantec.mobilesecurity.service.CallFwService" android:permission="com.symantec.permission.ACCESS_NORTON_SECURITY">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.callfirewall"/>
+                <action android:name="com.symantec.mobilesecurity.SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.symantec.mobilesecurity.service.RemoteService" android:permission="com.symantec.permission.ACCESS_NORTON_SECURITY">
+            <intent-filter>
+                <action android:name="com.symantec.mobilesecurity.INmsRemoteService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.symantec.mobilesecurity.ce.MAFCENode_privateNortonMobileSecurity_main">
+            <intent-filter>
+                <action android:name="com.symantec.maf.ce"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/accessibility_service_label" android:name="com.symantec.mobilesecurity.appadvisor.ScanAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/scan_accessibility_service_config"/>
+        </service>
+        <service android:exported="false" android:name="com.symantec.mobilesecurity.ping.AVPing"/>
+        <service android:name="com.symantec.mobilesecurity.management.ManagementService"/>
+        <service android:name="com.symantec.mobilesecurity.management.beachhead.BHEndpoint"/>
+        <service android:exported="true" android:name="com.symantec.mobilesecurity.management.LicenseService">
+            <intent-filter>
+                <action android:name="com.symantec.service.LicenseService"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/app_name" android:name="com.symantec.mobilesecurity.appadvisor.GooglePlayStoreAppInForegroundWatchService"/>
+        <receiver android:enabled="true" android:name="com.symantec.mobilesecurity.management.PackageObserver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:name="com.symantec.mobilesecurity.management.CommandWebBridge$ConnectivityChangeObserver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:description="@string/app_name" android:label="@string/app_name" android:name="com.symantec.mobilesecurity.service.AntiTheftDeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.ACTION_PASSWORD_FAILED"/>
+                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.symantec.mobilesecurity.antitheft.web.ui.CustomizedLockerService"/>
+        <receiver android:name="com.symantec.mobilesecurity.antimalware.SdcardMountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.symantec.spoc.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.symantec.mobilesecurity"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

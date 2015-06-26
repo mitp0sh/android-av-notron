@@ -1,0 +1,18 @@
+{
+	"folderName" : "raw",
+	"windowConfigs":
+	[
+		{
+			"activityNames":
+			[
+				"com.android.vending/.AssetBrowserActivity",
+				"com.android.vending/com.google.android.finsky.activities.MainActivity"
+			],
+			"appSearchFormatStringConfig":
+			{
+                "appNameFormatStringId": "com.android.vending:string/content_description_thumbnail_application",
+                "publisherNameNext": true
+			}
+		}
+	]
+}

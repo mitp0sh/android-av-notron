@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal">
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/dark" android:layout_gravity="center|right" android:id="@id/unlock_by_passcode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_horizontal" android:layout_marginRight="@dimen/padding_horizontal" android:text="@string/unlock_by_passcode_message_sim_card" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/unlock_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_horizontal">
+                    <Button android:id="@id/hint_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/lock_hint" style="@style/Button" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/forget_pw_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/forget_pwd_hint_text" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/darkgray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="20.0dip" android:text="@string/legal_text_on_lockscreen" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_horizontal" android:src="@drawable/ic_about_brand" />
+</LinearLayout>

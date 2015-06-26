@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" android:text="@string/warning_status_title1" />
+    <include layout="@layout/separator_line" />
+    <TextView android:textAppearance="?android:textAppearance" android:id="@id/tv_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_horizontal" />
+    <include layout="@layout/separator_line" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip">
+        <Button android:id="@id/btn_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_no" android:maxLines="2" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_yes" android:maxLines="2" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>

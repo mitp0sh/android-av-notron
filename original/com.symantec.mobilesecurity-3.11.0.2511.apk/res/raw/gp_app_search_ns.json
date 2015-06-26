@@ -1,0 +1,59 @@
+[ 
+	{
+		"url": "https://play.google.com/store/search?q=\"%1$s\"+\"%2$s\"&c=apps&hl=%3$s",
+		"webSearchConfigs":
+		[
+			{
+				"pageContentConfig":
+				{
+					"selector": "div.card-content:has(a.subtitle[title=%2$s]) a.title[title=%1$s]",
+					"attribute": "href"
+				}
+			},
+			{
+				"queryParameterConfig":
+				{
+					"name": "id"
+				}
+			}
+		]
+	},
+	{
+		"url": "https://play.google.com/store/search?q=\"%1$s\"&c=apps&hl=%3$s",
+		"webSearchConfigs":
+		[
+			{
+				"pageContentConfig":
+				{
+					"selector": "div.card-content:has(a.subtitle[title=%2$s]) a.title[title=%1$s]",
+					"attribute": "href"
+				}
+			},
+			{
+				"queryParameterConfig":
+				{
+					"name": "id"
+				}
+			}
+		]
+	},
+	{
+		"url": "https://play.google.com/store/search?q=%1$s&c=apps&hl=%3$s",
+		"webSearchConfigs":
+		[
+			{
+				"pageContentConfig":
+				{
+					"selector": "div.card-content:has(a.subtitle[title=%2$s]) a.title[title=%1$s]",
+					"attribute": "href"
+				}
+			},
+			{
+				"queryParameterConfig":
+				{
+					"name": "id"
+				}
+			}
+		]
+	}		
+]

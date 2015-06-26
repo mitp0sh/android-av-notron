@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_contact_name" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="false" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_time" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_time_data_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+        <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_sms_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="5" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_time" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/gray" android:id="@id/tv_time_data_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" layout="@layout/separator_line" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/delete" android:layout_weight="1.0" style="@style/dialogButton" />
+        <ImageView android:background="@drawable/ic_btn_tab_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/ok" android:layout_weight="1.0" style="@style/dialogButton" />
+    </LinearLayout>
+</LinearLayout>
